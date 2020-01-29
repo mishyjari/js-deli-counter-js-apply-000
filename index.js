@@ -1,4 +1,4 @@
-const takeANumber = (line,name) => {
+/* const takeANumber = (line,name) => {
   // Add new person (param: name) to the end of the line array
   line.push(name);
   // Use 'line.indexOf(name)' to retrieve that person's index in the array and '+1' since normies dont like  counting from zero I guess
@@ -26,4 +26,13 @@ const currentLine = line => {
     }
     return output;
   }
+}
+*/
+
+let currentNum = 0;
+
+const takeANumber = (line) => {
+  currentNum += 1;
+  line.push(currentNum);
+  return 'Welcome, you are number ' + currentNum;
 }
